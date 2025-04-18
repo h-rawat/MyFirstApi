@@ -2,7 +2,7 @@ using MyFirstApi.Models;
 
 namespace MyFirstApi.Services;
 
-public class PostService
+public class PostsService
 {
     private static readonly List<Post> AllPosts = new();
 
