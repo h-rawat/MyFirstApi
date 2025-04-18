@@ -58,4 +58,12 @@ public class PostsController : ControllerBase
         var posts = await _postsService.GetAllPosts();
         return Ok(posts);
     }
+
+    [HttpDelete]
+    public async Task<ActionResult<Post>> DeletePost(int id)
+    {
+        await _postsService.DeletePost(id);
+
+        return NoContent();
+    }
 }
